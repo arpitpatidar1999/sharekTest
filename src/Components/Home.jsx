@@ -5,6 +5,9 @@ import Layover from "../assets/Sharek - Master File/Polygon 4.png";
 import Sharek from "../assets/Sharek - Master File/sharek.png";
 import K from "../assets/Sharek - Master File/Kkkk.png";
 import iPhone from "../assets/Sharek - Master File/iPhone 14 Pro.png";
+import playStore from "../assets/Downloads/playStore.png";
+import appleStore from "../assets/Downloads/appleStore.png";
+import scan from "../assets/Downloads/scan.svg";
 
 const Home = () => {
   return (
@@ -39,7 +42,6 @@ const Home = () => {
                 zIndex: 1,
                 width: "100%",
                 height: "auto",
-                // opacity:0.5
               }}
             />
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
@@ -79,13 +81,20 @@ const Home = () => {
               />
             </Box>
           </Box>
-          <Box sx={{ zIndex: 3, position: "relative", display: "flex" }}>
-            <Box>
+          <Box
+            sx={{
+              zIndex: 3,
+              position: "relative",
+              display: { sx: "block", md: "flex" },
+            }}
+          >
+            <Box sx={{ width: { xs: "100%", md: "40%" }, p: "100px" }}>
               <Typography
                 variant="h6"
                 sx={{
                   color: "white",
-                  fontSize: "50px",
+                  fontSize: "48px",
+                  fontWeight: "bold",
                 }}
               >
                 Rent the perfect car for every cccasion!
@@ -94,12 +103,25 @@ const Home = () => {
                 variant="h6"
                 sx={{
                   color: "white",
-                  //   fontFamily: "inter",
-                  fontSize: "18px",
+                  fontSize: "24px",
                 }}
               >
                 Rent the Perfect Car for Every Ocassion!
               </Typography>{" "}
+              <Box alignItems={"center"} color={"white"} width={"400px"}>
+                <Box>
+                  <img src={appleStore} alt="screen-view" style={{paddingRight:"50px"}} />
+                  <img src={playStore} alt="screen-view" style={{}} />
+                </Box>
+
+                <Box>
+                  <p>Or</p>
+                  <p>Scan to Download</p>
+                </Box>
+                <Box>
+                  <img src={scan} alt="scanner" style={{}} />
+                </Box>
+              </Box>
             </Box>
             <Box>
               <img src={iPhone} alt="screen-view" style={{}} />
@@ -108,7 +130,7 @@ const Home = () => {
         </Box>
       </Box>
       <Box>
-        <Box sx={{ height: "490px", backgroundColor: "#EBE0E2" }}></Box>
+        <Box sx={{ height: "683px", backgroundColor: "#EBE0E2" }}></Box>
         <Box sx={{ height: "377px" }}></Box>
       </Box>
     </Box>
