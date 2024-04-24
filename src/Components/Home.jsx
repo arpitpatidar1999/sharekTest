@@ -4,7 +4,7 @@ import Rect from "../assets/Sharek - Master File/Rectangle 6724.png";
 import Layover from "../assets/Sharek - Master File/Polygon 4.png";
 import Sharek from "../assets/Sharek - Master File/sharek.png";
 import K from "../assets/Sharek - Master File/Kkkk.png";
-import iPhone from "../assets/Sharek - Master File/iPhone 14 Pro.png";
+import iPhone from "../assets/Sharek - Master File/iPhone 14 Pro (5).png";
 import playStore from "../assets/Downloads/playStore.png";
 import appleStore from "../assets/Downloads/appleStore.png";
 import scan from "../assets/Downloads/scan.svg";
@@ -108,23 +108,29 @@ const Home = () => {
               >
                 Rent the Perfect Car for Every Ocassion!
               </Typography>{" "}
-              <Box alignItems={"center"} color={"white"} width={"400px"}>
-                <Box>
-                  <img src={appleStore} alt="screen-view" style={{paddingRight:"50px"}} />
-                  <img src={playStore} alt="screen-view" style={{}} />
+              <br />
+              <Box alignItems={"center"} color={"white"} width={"300px"}>
+                <Box display={"flex"} justifyContent={"space-between"}>
+                  <img src={appleStore} alt="screen-view"  />
+                  <img src={playStore} alt="screen-view" style={{paddingLeft:"5px"}} />
                 </Box>
 
-                <Box>
-                  <p>Or</p>
-                  <p>Scan to Download</p>
+                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
+                <br />
+                  <Box alignSelf={"center"}>Or</Box>
+                  <br />
+                  <Box alignSelf={"center"}>Scan to Download</Box>
+                  <br />
                 </Box>
-                <Box>
+                <Box display={"flex"} justifyContent={"center"}>
                   <img src={scan} alt="scanner" style={{}} />
                 </Box>
               </Box>
             </Box>
-            <Box>
+            <Box padding={"0"} >
               <img src={iPhone} alt="screen-view" style={{}} />
+              {/* <img src={screen} alt="screen-view" style={{position:"absolute",top:"0", left:"0", zIndex:2}} /> */}
+
             </Box>
           </Box>
         </Box>
