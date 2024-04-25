@@ -137,9 +137,8 @@ const Home = () => {
                 </Box>
               </Box>
             </Box>
-            <Box padding={"0"}>
+            <Box paddingTop={"30px"}>
               <img src={iPhone} alt="screen-view" style={{}} />
-              {/* <img src={screen} alt="screen-view" style={{position:"absolute",top:"0", left:"0", zIndex:2}} /> */}
             </Box>
           </Box>
         </Box>

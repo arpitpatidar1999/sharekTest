@@ -14,8 +14,9 @@ const OneStop = () => {
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)"
       }}
     >
-      <Box sx={{ fontSize: "36px", fontWeight: 500, textAlign: "center" }}>
-        One stop for all your automobile needs
+      <Box sx={{ fontSize: "36px", fontWeight: 500, textAlign: "center", position:"relative"}}>
+        <Box zIndex={1} position={"relative"}>One stop for all your automobile needs</Box>
+        <Box backgroundColor={"#EAF2F7"} width={"481.72px"} height={"36px"} position={"absolute"} top={"20px"} left={"340px"} zIndex={0}></Box>
       </Box>
       <Box
         sx={{
