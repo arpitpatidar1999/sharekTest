@@ -169,7 +169,7 @@ function ResponsiveAppBar() {
                   my: 2,
                   color: "black",
                   display: "block",
-                  fontWeight: "800",
+                  fontWeight: "500",
                   textTransform:"none"
                 }}
               >

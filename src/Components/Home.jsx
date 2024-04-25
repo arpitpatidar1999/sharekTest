@@ -8,8 +8,8 @@ import iPhone from "../assets/Sharek - Master File/iPhone 14 Pro (5).png";
 import playStore from "../assets/Downloads/playStore.png";
 import appleStore from "../assets/Downloads/appleStore.png";
 import scan from "../assets/Downloads/scan.svg";
-
 import OneStop from "./Cards/OneStop/OneStop";
+import FindCars from "./Cards/FindCars/FindCars";
 
 const Home = () => {
   return (
@@ -150,16 +150,17 @@ const Home = () => {
             sx={{
               position: "absolute",
               bottom: 0,
-              display:"flex",
-              justifyContent:"center"
-            //   left: "50%",
-            //   transform: "translateX(-50%)",
+              display: "flex",
+              justifyContent: "center",
+              //   left: "50%",
+              //   transform: "translateX(-50%)",
             }}
           >
             <OneStop />
           </Box>
         </Box>
       </Box>
+      <FindCars />
     </Box>
   );
 };
