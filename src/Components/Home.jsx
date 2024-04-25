@@ -9,6 +9,8 @@ import playStore from "../assets/Downloads/playStore.png";
 import appleStore from "../assets/Downloads/appleStore.png";
 import scan from "../assets/Downloads/scan.svg";
 
+import OneStop from "./Cards/OneStop/OneStop";
+
 const Home = () => {
   return (
     <Box sx={{ m: 0, p: 0 }}>
@@ -111,12 +113,20 @@ const Home = () => {
               <br />
               <Box alignItems={"center"} color={"white"} width={"300px"}>
                 <Box display={"flex"} justifyContent={"space-between"}>
-                  <img src={appleStore} alt="screen-view"  />
-                  <img src={playStore} alt="screen-view" style={{paddingLeft:"5px"}} />
+                  <img src={appleStore} alt="screen-view" />
+                  <img
+                    src={playStore}
+                    alt="screen-view"
+                    style={{ paddingLeft: "5px" }}
+                  />
                 </Box>
 
-                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
-                <br />
+                <Box
+                  display={"flex"}
+                  flexDirection={"column"}
+                  justifyContent={"center"}
+                >
+                  <br />
                   <Box alignSelf={"center"}>Or</Box>
                   <br />
                   <Box alignSelf={"center"}>Scan to Download</Box>
@@ -127,17 +137,29 @@ const Home = () => {
                 </Box>
               </Box>
             </Box>
-            <Box padding={"0"} >
+            <Box padding={"0"}>
               <img src={iPhone} alt="screen-view" style={{}} />
               {/* <img src={screen} alt="screen-view" style={{position:"absolute",top:"0", left:"0", zIndex:2}} /> */}
-
             </Box>
           </Box>
         </Box>
       </Box>
       <Box>
         <Box sx={{ height: "683px", backgroundColor: "#EBE0E2" }}></Box>
-        <Box sx={{ height: "377px" }}></Box>
+        <Box sx={{ height: "377px", position: "relative" }}>
+          <Box
+            sx={{
+              position: "absolute",
+              bottom: 0,
+              display:"flex",
+              justifyContent:"center"
+            //   left: "50%",
+            //   transform: "translateX(-50%)",
+            }}
+          >
+            <OneStop />
+          </Box>
+        </Box>
       </Box>
     </Box>
   );

@@ -5,12 +5,13 @@ const OneStop = () => {
   return (
     <Box
       sx={{
-        width: "80%",
+        width: "81.25%",
         height: "661px",
-        backgroundColor: "wheat",
+        backgroundColor: "#FFFFFF",
         padding: "36px 63px",
-        margin: "20px",
+        // margin: "20px",
         borderRadius: "20px",
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)"
       }}
     >
       <Box sx={{ fontSize: "36px", fontWeight: 500, textAlign: "center" }}>
@@ -19,7 +20,7 @@ const OneStop = () => {
       <Box
         sx={{
           fontSize: "20px",
-          fontWeight: 450,
+          fontWeight: 400,
           textAlign: "center",
           marginTop: "26px",
         }}
@@ -38,7 +39,7 @@ const OneStop = () => {
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)"
           }}
         >
-          <Box
+          <Box display={"flex"} justifyContent={"center"}><Box
             sx={{
               display: "flex",
               justifyContent: "center",
@@ -54,7 +55,7 @@ const OneStop = () => {
             }}
           >
             01
-          </Box>
+          </Box></Box>
           <Box
             sx={{
               fontSize: "20px",
@@ -67,7 +68,7 @@ const OneStop = () => {
           </Box>
           <Box sx={{
               fontSize: "16px",
-              fontWeight: 450,
+              fontWeight: 400,
               lineHeight:"24px",
               marginTop: "26px",
             }}>
@@ -85,6 +86,7 @@ const OneStop = () => {
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)"
           }}
         >
+            <Box display={"flex"} justifyContent={"center"}>
           <Box
             sx={{
               display: "flex",
@@ -101,7 +103,7 @@ const OneStop = () => {
             }}
           >
             02
-          </Box>
+          </Box></Box>
           <Box
             sx={{
               fontSize: "20px",
@@ -114,7 +116,7 @@ const OneStop = () => {
           </Box>
           <Box sx={{
               fontSize: "16px",
-              fontWeight: 450,
+              fontWeight: 400,
               lineHeight:"24px",
               marginTop: "26px",
             }}>
@@ -132,6 +134,7 @@ const OneStop = () => {
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)"
           }}
         >
+            <Box display={"flex"} justifyContent={"center"}>
           <Box
             sx={{
               display: "flex",
@@ -148,7 +151,7 @@ const OneStop = () => {
             }}
           >
             03
-          </Box>
+          </Box></Box>
           <Box
             sx={{
               fontSize: "20px",
@@ -161,7 +164,7 @@ const OneStop = () => {
           </Box>
           <Box sx={{
               fontSize: "16px",
-              fontWeight: 450,
+              fontWeight: 400,
               lineHeight:"24px",
               marginTop: "26px",
             }}>
