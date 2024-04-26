@@ -11,7 +11,7 @@ const OneStop = () => {
         padding: "36px 63px",
         // margin: "20px",
         borderRadius: "20px",
-        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)"
+        // boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)"
       }}
     >
       <Box sx={{ fontSize: "36px", fontWeight: 500, textAlign: "center", position:"relative"}}>

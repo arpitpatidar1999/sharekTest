@@ -9,7 +9,11 @@ import playStore from "../assets/Downloads/playStore.png";
 import appleStore from "../assets/Downloads/appleStore.png";
 import scan from "../assets/Downloads/scan.svg";
 import OneStop from "./Cards/OneStop/OneStop";
-import FindCars from "./Cards/FindCars/FindCars";
+import FindCars from './Cards/FindCars/FindCars';
+import WhatsSpecial from "./Cards/WhatsSpecial/WhatsSpecial";
+import Choose from "./Cards/Choose/Choose";
+import HostYourCar from "./Cards/HostYourCar/HostYourCar";
+
 
 const Home = () => {
   return (
@@ -160,7 +164,10 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
-      <FindCars />
+      <Box><WhatsSpecial/></Box>
+      <Box><FindCars /></Box>
+      <Box><Choose /></Box>
+      <Box sx={{display:"flex", justifyContent:"center", padding:"20px"}}><HostYourCar/></Box>
     </Box>
   );
 };
