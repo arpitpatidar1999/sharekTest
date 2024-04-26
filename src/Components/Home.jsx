@@ -13,6 +13,7 @@ import FindCars from './Cards/FindCars/FindCars';
 import WhatsSpecial from "./Cards/WhatsSpecial/WhatsSpecial";
 import Choose from "./Cards/Choose/Choose";
 import HostYourCar from "./Cards/HostYourCar/HostYourCar";
+import TestDrive from "./Cards/TestDrive/TestDrive";
 
 
 const Home = () => {
@@ -167,6 +168,7 @@ const Home = () => {
       <Box><WhatsSpecial/></Box>
       <Box><FindCars /></Box>
       <Box><Choose /></Box>
+      <Box><TestDrive/></Box>
       <Box sx={{display:"flex", justifyContent:"center", padding:"20px"}}><HostYourCar/></Box>
     </Box>
   );
