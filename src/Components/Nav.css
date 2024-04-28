@@ -1,0 +1,17 @@
+.navbar-enter {
+  transform: translateY(-100%);
+}
+
+.navbar-enter-active {
+  transform: translateY(0%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar-exit {
+  transform: translateY(0%);
+}
+
+.navbar-exit-active {
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+}

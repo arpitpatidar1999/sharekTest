@@ -11,6 +11,9 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import LanguageIcon from "@mui/icons-material/Language";
 import Logo from "../assets/NavLogo/Logo.svg";
+import { useEffect, useState } from "react";
+import { useScrollTrigger } from "@mui/material";
+import './Nav.css';
 
 const pages = [
   "Browse Cars",
@@ -22,8 +25,8 @@ const pages = [
 const settings = ["EN", "AR", "HI"];
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -40,9 +43,22 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
 
+
+  // const [isVisible, setIsVisible] = useState(true);
+
+  // const trigger = useScrollTrigger({
+  //   disableHysteresis: true,
+  //   threshold: 0,
+  // });
+
+  // useEffect(() => {
+  //   setIsVisible(!trigger);
+  // }, [trigger]);
+
   return (
     <AppBar
       position="static"
+      // className={isVisible ? "navbar-enter navbar-enter-active" : "navbar-exit navbar-exit-active"}
       style={{
         zIndex: 1,
         height: "80px",
@@ -52,6 +68,8 @@ function ResponsiveAppBar() {
         justifyContent: "center",
         alignItems: "center",
         padding: "18px 18px",
+        // transition: "transform 0.5s ease-in-out",
+        // transform: isVisible ? "translateY(0)" : "translateY(-100%)",
       }}
     >
       <Container maxWidth="xl" style={{}}>
