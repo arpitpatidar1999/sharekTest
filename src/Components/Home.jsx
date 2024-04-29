@@ -14,6 +14,7 @@ import WhatsSpecial from "./Cards/WhatsSpecial/WhatsSpecial";
 import Choose from "./Cards/Choose/Choose";
 import HostYourCar from "./Cards/HostYourCar/HostYourCar";
 import TestDrive from "./Cards/TestDrive/TestDrive";
+import styles from './homeStyles.module.css'
 
 
 const Home = () => {
@@ -142,9 +143,9 @@ const Home = () => {
                 </Box>
               </Box>
             </Box>
-            <Box paddingTop={"30px"}>
-              <img src={iPhone} alt="screen-view" style={{}} />
-            </Box>
+              <Box paddingTop={"30px"}>
+                <img src={iPhone} alt="screen-view" style={{}} className={styles.moveIn} />
+              </Box>
           </Box>
         </Box>
       </Box>
@@ -165,11 +166,11 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
-      <Box><WhatsSpecial/></Box>
+      <Box><WhatsSpecial /></Box>
       <Box><FindCars /></Box>
       <Box><Choose /></Box>
-      <Box><TestDrive/></Box>
-      <Box sx={{display:"flex", justifyContent:"center", padding:"20px"}}><HostYourCar/></Box>
+      <Box><TestDrive /></Box>
+      <Box sx={{ display: "flex", justifyContent: "center", padding: "20px" }}><HostYourCar /></Box>
     </Box>
   );
 };

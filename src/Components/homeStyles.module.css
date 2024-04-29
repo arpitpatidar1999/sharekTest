@@ -1,0 +1,16 @@
+.moveIn {
+    animation-name: move-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; /* Keeps the element in its final state after the animation ends */
+    position: relative; /* Ensure the element is positioned relative to its parent */
+}
+
+@keyframes move-in {
+    from {
+        top: 100%; /* Start the animation from being 100% below its original position */
+    }
+    to {
+        top: 0%; /* Move the element to the bottom of its container */
+    }
+}
+

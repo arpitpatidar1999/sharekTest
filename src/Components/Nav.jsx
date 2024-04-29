@@ -20,7 +20,7 @@ const pages = [
   "About",
   "Become a host",
   "Blog",
-  "Refreal Program",
+  "Referal Program",
 ];
 const settings = ["EN", "AR", "HI"];
 
