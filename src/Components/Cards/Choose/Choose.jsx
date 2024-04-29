@@ -4,6 +4,25 @@ import CarouselCars from "../CarouselCars/CarouselCars";
 import LocalGasStationOutlinedIcon from "@mui/icons-material/LocalGasStationOutlined";
 import SpeedOutlinedIcon from "@mui/icons-material/SpeedOutlined";
 
+const CAR_TYPES = [
+  {
+    name: "Electric"
+  },
+  {
+    name: "Performance"
+  },
+  {
+    name: "Convertibles"
+  },
+  {
+    name: "Pet friendly"
+  },
+  {
+    name: "Off-roading"
+  },
+
+]
+
 const Choose = () => {
   return (
     <Box sx={{height: "784px", backgroundColor: "#EBE0E2"}}>
@@ -17,11 +36,17 @@ const Choose = () => {
           padding: "30px",
           padding: "0 420px",
           textAlignlign: "center",
+          marginBottom: "5vh"
         }}
       >
         Powerful, self-serve product and growth analytics to help you convert,
         engage, and retain more users. Trusted by over 4,000 startups.{" "}
       </Box>
+      <div>
+        {
+
+        }
+      </div>
       <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
         <Box
           sx={{

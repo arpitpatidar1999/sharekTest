@@ -19,159 +19,152 @@ import styles from './homeStyles.module.css'
 
 const Home = () => {
   return (
-    <Box sx={{ m: 0, p: 0 }}>
-      <Box
-        sx={{
-          // display: "flex",
-          // justifyContent: "center",
-          //   padding: "100px",
+    <div style={{ margin: 0, padding: 0 }}>
+      <div
+        style={{
           alignItems: "center",
-          //   width: "100%",
           height: "100vh",
           zIndex: 3,
           backgroundColor: "#EBE0E2",
-          //   backgroundImage: `url(${Rect})`,
-          //   backgroundSize: "cover",
-          //   backgroundPosition: "center",
-          // position:'relative'
-          // backgroundColor: "#9D396E"
+          paddingBottom: "10vh"
         }}
       >
-        <Box>
-          <Box>
-            {" "}
+        <div>
+          <img
+            src={Rect}
+            alt="rectangle"
+            style={{
+              position: "absolute",
+              top: "80px",
+              right: "0px",
+              zIndex: 1,
+              width: "100%",
+              height: "auto",
+            }}
+          />
+          <div style={{ display: "flex" }}>
             <img
-              src={Rect}
-              alt="rectangle"
+              src={Layover}
+              alt="Layover Image"
+              style={{
+                position: "absolute",
+                top: "0px",
+                right: "29.94px",
+                zIndex: 1,
+                opacity: 0.2,
+              }}
+            />
+            <img
+              src={Sharek}
+              alt="sharek"
+              style={{
+                position: "absolute",
+                top: "0px",
+                right: "0",
+                zIndex: 1,
+                opacity: 0.2,
+              }}
+            />
+            <img
+              src={K}
+              alt="kkk"
               style={{
                 position: "absolute",
                 top: "80px",
-                right: "0px",
-                zIndex: 1,
-                width: "100%",
-                height: "auto",
+                right: "0",
+                height: "845.27px",
+                zIndex: 0,
+                opacity: 0.2,
               }}
             />
-            <Box sx={{ display: { xs: "none", md: "flex" } }}>
-              <img
-                src={Layover}
-                alt="Layover Image"
-                style={{
-                  position: "absolute",
-                  top: "0px",
-                  right: "29.94px",
-                  zIndex: 1,
-                  opacity: 0.2,
-                }}
-              />
-              <img
-                src={Sharek}
-                alt="sharek"
-                style={{
-                  position: "absolute",
-                  top: "0px",
-                  right: "0",
-                  zIndex: 1,
-                  opacity: 0.2,
-                }}
-              />
-              <img
-                src={K}
-                alt="kkk"
-                style={{
-                  position: "absolute",
-                  top: "80px",
-                  right: "0",
-                  height: "845.27px",
-                  zIndex: 0,
-                  opacity: 0.2,
-                }}
-              />
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              zIndex: 3,
-              position: "relative",
-              display: { sx: "block", md: "flex" },
-            }}
-          >
-            <Box sx={{ width: { xs: "100%", md: "40%" }, p: "100px" }}>
-              <Typography
-                variant="h6"
-                sx={{
-                  color: "white",
-                  fontSize: "48px",
-                  fontWeight: "bold",
-                }}
-              >
-                Rent the perfect car for every cccasion!
-              </Typography>{" "}
-              <Typography
-                variant="h6"
-                sx={{
-                  color: "white",
-                  fontSize: "24px",
-                }}
-              >
-                Rent the Perfect Car for Every Ocassion!
-              </Typography>{" "}
-              <br />
-              <Box alignItems={"center"} color={"white"} width={"300px"}>
-                <Box display={"flex"} justifyContent={"space-between"}>
-                  <img src={appleStore} alt="screen-view" />
-                  <img
-                    src={playStore}
-                    alt="screen-view"
-                    style={{ paddingLeft: "5px" }}
-                  />
-                </Box>
+          </div>
+        </div>
+        <div
+          style={{
+            zIndex: 3,
+            position: "relative",
+            display: "flex",
+          }}
+        >
+          <div style={{ width: "40%", padding: "100px" }}>
+            <div
+              variant="h6"
+              style={{
+                color: "white",
+                fontSize: "48px",
+                fontWeight: "bold",
+                marginBottom: "5vh"
+              }}
+              className={styles.fadeInFromBottom}
+            >
+              Rent the perfect car for every occasion!
+            </div>{" "}
+            <div
+              variant="h6"
+              style={{
+                color: "white",
+                fontSize: "24px",
+                marginBottom: "5vh"
+              }}
+              className={styles.fadeInFromBottom}
+            >
+              Rent the Perfect Car for Every Ocassion!
+            </div>{" "}
+            <br />
+            <div style={{ alignItems: "center", color: "white", width: "300px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between" }} className={styles.fadeInFromBottom}>
+                <img src={appleStore} alt="screen-view" />
+                <img
+                  src={playStore}
+                  alt="screen-view"
+                  style={{ paddingLeft: "5px" }}
+                />
+              </div>
 
-                <Box
-                  display={"flex"}
-                  flexDirection={"column"}
-                  justifyContent={"center"}
-                >
-                  <br />
-                  <Box alignSelf={"center"}>Or</Box>
-                  <br />
-                  <Box alignSelf={"center"}>Scan to Download</Box>
-                  <br />
-                </Box>
-                <Box display={"flex"} justifyContent={"center"}>
-                  <img src={scan} alt="scanner" style={{}} />
-                </Box>
-              </Box>
-            </Box>
-              <Box paddingTop={"30px"}>
-                <img src={iPhone} alt="screen-view" style={{}} className={styles.moveIn} />
-              </Box>
-          </Box>
-        </Box>
-      </Box>
-      <Box>
-        <Box sx={{ height: "683px", backgroundColor: "#EBE0E2" }}></Box>
-        <Box sx={{ height: "377px", position: "relative" }}>
-          <Box
-            sx={{
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <br />
+                <div style={{ alignSelf: "center" }} className={styles.fadeInFromBottom}>Or</div>
+                <br />
+                <div style={{ alignSelf: "center" }} className={styles.fadeInFromBottom}>Scan to Download</div>
+                <br />
+              </div>
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <img src={scan} alt="scanner" style={{}} className={styles.fadeInFromBottom} />
+              </div>
+            </div>
+          </div>
+          <div style={{ paddingTop: "30px" }}>
+            <img src={iPhone} alt="screen-view" style={{}} className={styles.moveIn} />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style={{ height: "683px", backgroundColor: "#EBE0E2" }}></div>
+        <div style={{ height: "377px", position: "relative" }}>
+          <div
+            style={{
               position: "absolute",
               bottom: 0,
               display: "flex",
               justifyContent: "center",
-              //   left: "50%",
-              //   transform: "translateX(-50%)",
             }}
           >
             <OneStop />
-          </Box>
-        </Box>
-      </Box>
-      <Box><WhatsSpecial /></Box>
-      <Box><FindCars /></Box>
-      <Box><Choose /></Box>
-      <Box><TestDrive /></Box>
-      <Box sx={{ display: "flex", justifyContent: "center", padding: "20px" }}><HostYourCar /></Box>
-    </Box>
+          </div>
+        </div>
+      </div>
+      <div><WhatsSpecial /></div>
+      <div><FindCars /></div>
+      <div><Choose /></div>
+      <div><TestDrive /></div>
+      <div style={{ display: "flex", justifyContent: "center", padding: "20px" }}><HostYourCar /></div>
+    </div>
   );
 };
 
