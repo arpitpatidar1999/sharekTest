@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Typography } from "@mui/material";
 import Rect from "../assets/Sharek - Master File/Rectangle 6724.png";
 import Layover from "../assets/Sharek - Master File/Polygon 4.png";
@@ -15,9 +15,11 @@ import Choose from "./Cards/Choose/Choose";
 import HostYourCar from "./Cards/HostYourCar/HostYourCar";
 import TestDrive from "./Cards/TestDrive/TestDrive";
 import styles from './homeStyles.module.css'
-
+import { Waypoint } from 'react-waypoint'
 
 const Home = () => {
+  const [sectionNumber, setSectionNumber] = useState(0)
+
   return (
     <div style={{ margin: 0, padding: 0 }}>
       <div
@@ -155,15 +157,25 @@ const Home = () => {
               justifyContent: "center",
             }}
           >
-            <OneStop />
+            <Waypoint onEnter={() => setSectionNumber(1)} bottomOffset={-700}>
+              {sectionNumber >= 1 && <OneStop />}
+            </Waypoint>
           </div>
         </div>
       </div>
-      <div><WhatsSpecial /></div>
+      <div>
+        <Waypoint onEnter={() => setSectionNumber(2)} bottomOffset={-500}>
+          {sectionNumber >= 2 && <WhatsSpecial />}
+        </Waypoint>
+      </div>
       <div><FindCars /></div>
-      <div><Choose /></div>
+      <Waypoint onEnter={() => setSectionNumber(4)} bottomOffset={-300}>
+        {sectionNumber >= 4 && <Choose />}
+      </Waypoint>
       <div><TestDrive /></div>
-      <div style={{ display: "flex", justifyContent: "center", padding: "20px" }}><HostYourCar /></div>
+      <Waypoint onEnter={() => setSectionNumber(6)} bottomOffset={-300}>
+      {sectionNumber >= 6 && <div style={{ display: "flex", justifyContent: "center", padding: "20px" }}><HostYourCar /></div>}
+      </Waypoint>
     </div>
   );
 };

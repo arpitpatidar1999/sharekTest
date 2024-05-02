@@ -3,6 +3,7 @@ import React from "react";
 import CarouselCars from "../CarouselCars/CarouselCars";
 import LocalGasStationOutlinedIcon from '@mui/icons-material/LocalGasStationOutlined';
 import SpeedOutlinedIcon from '@mui/icons-material/SpeedOutlined';
+import styles from './whatsSpecialStyles.module.css'
 
 
 const WhatsSpecial = () => {
